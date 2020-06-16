@@ -207,8 +207,7 @@ resource "kubernetes_config_map" "this" {
         }
       }
       table_manager = {
-        retention_deletes_enabled = true
-        retention_period          = "${24 * 21}h"
+        retention_deletes_enabled = false
         index_tables_provisioning = {
           enable_ondemand_throughput_mode : true
           enable_inactive_throughput_on_demand_mode : true
