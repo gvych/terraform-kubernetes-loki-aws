@@ -242,13 +242,13 @@ resource "kubernetes_service" "this" {
   spec {
     port {
       name        = "grpc-api"
-      port        = 81
+      port        = var.loki_grpc_port
       protocol    = "TCP"
       target_port = "grpc"
     }
     port {
       name        = "http-api"
-      port        = 80
+      port        = var.loki_http_port
       protocol    = "TCP"
       target_port = "http"
     }

@@ -97,3 +97,15 @@ variable "loki_version" {
   type        = string
   default     = "1.5.0"
 }
+
+variable "loki_grpc_port" {
+  description = "The Loki GRPC port"
+  type        = integer
+  default     = 81
+}
+
+variable "loki_http_port" {
+  description = "The Loki HTTP port"
+  type        = integer
+  default     = 80
+}
