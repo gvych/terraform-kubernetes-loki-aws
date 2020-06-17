@@ -100,12 +100,12 @@ variable "loki_version" {
 
 variable "loki_grpc_port" {
   description = "The Loki GRPC port"
-  type        = integer
+  type        = number
   default     = 81
 }
 
 variable "loki_http_port" {
   description = "The Loki HTTP port"
-  type        = integer
+  type        = number
   default     = 80
 }
